@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+          <div class="logo">
+            <h1>Your Beauty Brand</h1>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="shop.html">Shop All</a></li>
+              <li><a href="new.html">New</a></li>
+              <li><a href="#">Best Sellers</a></li>
+              <li><a href="face.html">Face</a></li>
+              <li><a href="lips.html">Lips</a></li>
+              <li><a href="eye.html">Eyes</a></li>
+            </ul>
+          </nav>
+          <div class="search">
+            <input type="text" placeholder="Search" aria-label="Search products">
+            <button aria-label="Search">Search</button>
+          </div>
+          <div class="cart">
+            <a href="#" aria-label="Cart">Cart</a>
+          </div>
+        </div>
+      </header>
+      <section class="product-list">
+        <div class="product-item">
+          <img src="face1.png" alt="Product 1">
+          
+          <h3>Miss Rose zero pore Primer</h3>
+          <button onclick="addToCart(1)">Add to Cart</button>
+          <div class="rating">
+            <span class="stars">★★★★★</span>
+            <span class="reviews">(273)</span>
+          </div>
+          <p class="price">
+            <span class="old-price">Rs.1299 PKR</span>
+            <span class="new-price">Rs.899 PKR</span>
+          </p>
+         
+        </div>
+        <div class="product-item">
+          <img src="face2.png" alt="Product 2">
+          
+          <h3>Miss Rose Makeup base Primer</h3>
+          <button onclick="addToCart(2)">Add to Cart</button>
+          <div class="rating">
+            <span class="stars">★★★★★</span>
+            <span class="reviews">(1550)</span>
+          </div>
+          <p class="price">
+            <span class="old-price">Rs.1100 PKR</span>
+            <span class="new-price">Rs.700 PKR</span>
+          </p>
+        </div>
+        <div class="product-item">
+          <img src="face3.png" alt="Product 2">
+          
+          <h3>Miss Rose Mist & Fix setting Spray</h3>
+          <button onclick="addToCart(3)">Add to Cart</button>
+          <div class="rating">
+            <span class="stars">★★★★★</span>
+            <span class="reviews">(1007)</span>
+          </div>
+          <p class="price">
+            <span class="old-price">Rs.899 PKR</span>
+            <span class="new-price">Rs.650 PKR</span>
+          </p>
+        </div>
+        <div class="product-item">
+          <img src="face4.png" alt="Product 2">
+          
+          <h3>Miss Rose Two-way Compact Powder</h3>
+          <button onclick="addToCart(4)">Add to Cart</button>
+          <div class="rating">
+            <span class="stars">★★★★★</span>
+            <span class="reviews">(120)</span>
+          </div>
+          <p class="price">
+            <span class="old-price">Rs.699 PKR</span>
+            <span class="new-price">Rs.499 PKR</span>
+          </p>
+        </div>
+    
+        
+          
+        </section>
+      
+        <div id="cart-modal" class="modal">
+          <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <p id="cart-total"></p>
+          </div>
+        </div>
+        
+        
+  
+  <script src="script.js"></script>
+      
+        
+</body>
+</html>

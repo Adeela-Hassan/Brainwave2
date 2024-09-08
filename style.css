@@ -1,0 +1,236 @@
+/* General Reset */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: white;
+}
+
+header {
+    background-color: rgb(53, 123, 147);
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Container Styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto; /* Center the container */
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo Styling */
+.logo {
+    font-size: 18px; 
+    font-weight: bold;
+    color: #333;
+}
+
+/* Navigation Styling */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+nav li {
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Search Bar Styling */
+.search {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Move search bar towards the left */
+}
+
+.search input {
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+.search button {
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.cart {
+    font-size: 20px;
+    margin-left: 20px; 
+}
+
+.cart a {
+    color: black; 
+    font-weight: bold;
+}
+
+/* Full-Screen Image Styling */
+.full-screen-image {
+    width: 100%;
+    height: auto;
+}
+
+.full-screen-image img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+}
+
+.heading-container {
+    text-align: center; /* Center text horizontally */
+    padding: 20px 0;
+    background-color: white; /* Set a background color to separate from the image */
+    width: 100%; /* Ensure the container takes up full width */
+    box-sizing: border-box; /* Include padding in the element's total width */
+    margin: 0 auto; /* Center container if there's a fixed width */
+}
+
+.heading-container h2 {
+    font-size: 2rem; /* Adjust size as needed */
+    color: black; /* Or any color that contrasts well with the background */
+    margin-bottom: 10px;
+    text-align: center; /* Center text horizontally */
+}
+
+.heading-container p {
+    color: black; /* Or any color that contrasts well with the background */
+    font-size: 1rem;
+    text-align: center; /* Center text horizontally */
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Adjusted for tighter alignment */
+    padding: 20px;
+    background-color: white;
+}
+
+.product-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 5px; /* Adjusted margin to reduce space */
+    flex: 0 0 calc(25% - 10px); /* Adjusted flex-basis for margin */
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+}
+
+
+
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+
+
+.product-item h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.stars {
+    color: #ffa500;
+}
+
+.reviews {
+    margin-left: 5px;
+    color: #777;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #888;
+    margin-right: 10px;
+}
+
+.new-price {
+    color: #f00;
+}
+/* Basic modal styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  .close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close-btn:hover,
+  .close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
